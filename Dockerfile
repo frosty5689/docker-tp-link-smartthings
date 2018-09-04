@@ -22,5 +22,7 @@ ADD run/* /opt/smartthings-tplink/
 
 WORKDIR /opt/smartthings-tplink/
 
+EXPOSE 8082/tcp
+
 CMD ["/opt/smartthings-tplink/start.sh"]
 
