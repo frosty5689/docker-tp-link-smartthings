@@ -14,8 +14,6 @@ docker run \
 ```
 
 ## Parameters
-
-* `--net=host` - Uses host network with container, use this if H@H have trouble accepting connections. This will let H@H use the host's internal IP for routing instead of the internal IP used by Docker bridge.
 * `-e TZ` - Timezone to run the app in
 * `-p YOUR_PORT:8082/tcp` - Expose port 8082 used by the app as port YOUR_PORT to handle requests from SmartThings
 
