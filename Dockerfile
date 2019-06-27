@@ -9,11 +9,11 @@ RUN apk add --no-cache --update \
   && rm -rf /root/.cache
 
 RUN apk add --no-cache --update --virtual build-dependencies wget unzip && \
-    wget -O /tmp/smartthings-tplink-master.zip https://github.com/DaveGut/SmartThings_Hub-Based_TP-Link-Plugs-Switches-Bulbs/archive/master.zip && \
+    wget -O /tmp/smartthings-tplink-master.zip https://github.com/DaveGut/TP-Link-SmartThings/archive/master.zip && \
     ls -l /tmp && \
     mkdir -p /opt && \
     unzip /tmp/smartthings-tplink-master.zip -d /opt && \
-    mv /opt/SmartThings* /opt/smartthings-tplink && \
+    mv "/opt/TP-Link-SmartThings-master/NodeJS Files" /opt/smartthings-tplink && \
     cd /opt/smartthings-tplink && \
     rm -rf /tmp/smartthings-tplink-master.zip && \
     apk del build-dependencies
